@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SB_MS_Eureka_ServiceRegistry_App_01
+server:
+  port: 8761
+#it is used to stop fetching api's into the Eureka serer
+eureka:
+  client:
+    fetch-registry: false
+#This one restricts the self service registration
+    register-with-eureka: false
